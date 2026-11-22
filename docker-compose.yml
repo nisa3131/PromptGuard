@@ -3,3 +3,12 @@ services:
     build: ./backend
     ports:
       - "8001:8000"
+    environment:
+      PROMPTGUARD_API_KEY: ${PROMPTGUARD_API_KEY:?Set PROMPTGUARD_API_KEY in .env}
+      PROMPTGUARD_DB: /data/promptguard.sqlite3
+      PROMPTGUARD_MODEL_PATH: /srv/models/promptguard_baseline.joblib
+    volumes:
+      - promptguard_data:/data
+      - ./ml/models:/srv/models:ro
+volumes:
+  promptguard_data:
