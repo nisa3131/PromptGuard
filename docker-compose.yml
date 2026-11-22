@@ -9,13 +9,12 @@ services:
       PROMPTGUARD_MODEL_PATH: /srv/models/promptguard_baseline.joblib
     volumes:
       - promptguard_data:/data
-      - ./ml/models:/srv/models:ro  web:
+      - ./ml/models:/srv/models:ro
+  web:
     build: ./frontend
     ports:
       - "3001:80"
     depends_on:
       - api
-
-
 volumes:
   promptguard_data:
