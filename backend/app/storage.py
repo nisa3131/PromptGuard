@@ -18,6 +18,13 @@ def connection():
             threat_type TEXT NOT NULL,
             latency_ms REAL NOT NULL
         )""")
+        db.execute("""CREATE TABLE IF NOT EXISTS api_keys (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            label TEXT NOT NULL,
+            key_hash TEXT UNIQUE NOT NULL,
+            created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            revoked INTEGER NOT NULL DEFAULT 0
+        )""")
         yield db
         db.commit()
     finally:
