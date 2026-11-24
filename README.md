@@ -5,6 +5,12 @@
 [![Backend checks](https://github.com/nisa3131/PromptGuard/actions/workflows/backend.yml/badge.svg)](https://github.com/nisa3131/PromptGuard/actions/workflows/backend.yml)
 [![Frontend build](https://github.com/nisa3131/PromptGuard/actions/workflows/frontend.yml/badge.svg)](https://github.com/nisa3131/PromptGuard/actions/workflows/frontend.yml)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Render-6756D6?style=for-the-badge)](https://promptguard-nh99.onrender.com)
+
+[Open live dashboard](https://promptguard-nh99.onrender.com) · [API documentation](https://promptguard-nh99.onrender.com/docs) · [Health check](https://promptguard-nh99.onrender.com/api/v1/health)
+
+The hosted demo requires a private API key for authenticated operations. Contact the project owner for a guided demonstration. Free hosting may cold-start and reset temporary data.
+
 ## Overview
 
 PromptGuard evaluates untrusted text before it reaches an AI application. It combines a TF-IDF/logistic-regression baseline with explicit security rules, API key authentication and operational analytics. It is a demonstrable security prototype, not a guarantee that every attack will be detected.
