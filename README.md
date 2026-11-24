@@ -34,3 +34,7 @@ TF-IDF and logistic regression trained on deepset/prompt-injections, rule-assist
 ## Limitations
 
 Binary classifier and heuristic threat labels are not a guarantee of protection. Missing models fail closed. Rule decisions do not claim calibrated confidence. Logs store hashes instead of plaintext prompts; hashes are not anonymization. Evaluate the actual saved model and independently test new attacks before production use. Load only trusted joblib artifacts. Public deployment requires additional security hardening.
+
+## Interview resources
+
+[Architecture diagram, demo walkthrough, and interview questions](docs/INTERVIEW_GUIDE.md).
