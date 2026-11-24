@@ -2,6 +2,8 @@
 
 The portfolio demo uses a single Docker image containing FastAPI and the React build. The local Docker Compose setup remains separate.
 
+Hosted demo: [Open dashboard](https://promptguard-nh99.onrender.com) · [API docs](https://promptguard-nh99.onrender.com/docs) · [Health check](https://promptguard-nh99.onrender.com/api/v1/health).
+
 ## Render configuration
 
 | Setting | Value |
