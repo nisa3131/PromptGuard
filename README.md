@@ -107,3 +107,7 @@ Binary classification and heuristic threat labels do not establish robust protec
 ## Interview resources
 
 [Architecture and demo walkthrough](docs/INTERVIEW_GUIDE.md)
+
+## Render cloud demo configuration
+
+[Render deployment, environment variables, health checks and live demo verification](docs/FREE_DEPLOYMENT.md). The single-container Docker build is separate from the local Docker Compose setup. Keep all credentials private.
